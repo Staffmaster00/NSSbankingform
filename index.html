@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banking Form</title>
+</head>
+<body>
+	<div id="personalInfo">
+		<label for="firstName" class="labels">First Name:</label>
+		<input id ="firstName" type="text" name="firstName_txt">
+		<br>
+		<label for="middleName" class="labels">Middle Initial:</label>
+		<input id ="middleName" type="text" name="middleName_txt">
+		<br>
+		<label for="lastName" class="labels">Last Name:</label>
+		<input id ="lastName" type="text" name="lastName_txt">
+		<br>
+		<label for="address" class="labels">Address:</label>
+		<input id ="address" type="text" name="address_txt">
+		<br>
+		<label for="occupation" class="labels">Occupation:</label>
+		<input id ="occupation" type="text" name="occupation_txt">
+		<br>
+		<label for="employer" class="labels">Employer:</label>
+		<input id ="employer" type="text" name="employer_txt">
+		<br>
+		<label for="employer_address" class="labels">Employer Address:</label>
+		<input id ="employer_address" type="text" name="employer_address_txt">
+		<br>
+	</div>
+	<div id="loanSelect">
+		<label>Loan Type</label>
+				<br>
+				
+				<select id="loanSelect_list" name="loanSelect_list">
+					<option value="Commercial">
+						Commercial
+					</option>
+						
+					<option value="realEstate">
+						Real Estate
+					</option>
+					<option value="personal">
+						Personal
+					</option>
+					<option value="mortgage">
+						Mortgage
+					</option>
+				</select>
+		<br>			
+		<br>
+		<label for="loanAmount">Loan Amount:</label>
+		<input id="loanAmount" type="text" name="loanAmount_txt">
+	</div>
+	<div id="loanLength">
+		<label>Loan Length</label>
+		<br>
+		<label for="fiveYears">Five Years:</label>
+				<input id= "fiveYears" type="radio" name="loanLength_radio" value="fiveYears">
+				<br>
+				<label for="fifthTeenYears">Fifthteen Years:</label>
+				<input id= "fifthTeenYears" type="radio" name="loanLength_radio" value="fifthTeenYears">
+				<br>
+				<label for="thirtyYears">Thirty Years:</label>
+				<input id= "thirtyYears" type="radio" name="loanLength_radio" value="thirtyYears">
+				<br>
+		
+	</div>
+	<div id="specialCheckbox">
+		<br>
+		<label>Special Conditions</label>
+		<br>
+		<input id="downPayment" type="checkbox" name="checkboxArea"><label for="downPayment">I have a down payment</label>
+		<br>
+		<input id="outOfState" type="checkbox" name="checkboxArea"><label for="outOfState">I live out of state</label>
+		<br>
+		<input id="married" type="checkbox" name="checkboxArea"><label for="married">I am married</label>
+		<br>
+		<input id="co_sign" type="checkbox" name="checkboxArea"><label for="co_sign">I will be co-signing the loan</label>
+		<br>
+	</div>
+	<div id="commentsText">
+		<label>Comments:</label>
+		<br>
+		<textarea name="comments" rows="15" cols="30">Leave comments here</textarea>
+	</div>
+	<div id="contactInfo">
+		<label for="emailAddress">Email:</label>
+		<input id="emailAddress" type="text" name="emailAddress_txt">
+		<br>
+		<label for="telephoneNum">Prefered phone number:</label>
+		<input id="telephoneNum" type="text" name="telephoneNum_txt">
+		<br>
+		<label for="linkedIn">LinkedIn:</label>
+		<input id="linkedIn" type="text" name="linkedIn">
+	</div>
+	<br>
+	<button id="submitAll" type="submit" name="submitAll_button">Submit Form</button>
+</body>
+</html>
